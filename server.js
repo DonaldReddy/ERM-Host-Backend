@@ -4,6 +4,6 @@ import dbConnect from './database/dbConnect.js'
 dbConnect().then(() => {
     const PORT = process.env.PORT || 8000
     app.listen(PORT, () => {
-        console.log("Server Running");
+        console.log(`Server Running ${PORT} `);
     })
 })
